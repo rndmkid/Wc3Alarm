@@ -9,6 +9,8 @@ import re
 import requests
 from selenium import webdriver
 from pandas.io.html import read_html
+import winsound
+from MainGUI import MainGUI
 
 
 
@@ -52,6 +54,7 @@ def set_alarm():
 
 def sound_alarm():
     #To-Do: Sound Alarm
+    winsound.Beep(440, 1000)
     return
 
 def list_ent_games(mode):
@@ -71,9 +74,6 @@ def list_ent_games(mode):
 
 
 def main():
-    
-    print(check_games(["heroes", "empires"]))
-     
     
     return
 
