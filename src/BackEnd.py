@@ -11,6 +11,7 @@ from selenium import webdriver
 from pandas.io.html import read_html
 import winsound
 import time
+from pyperclip import copy
 #from MainGUI import GUI
 
         
@@ -86,6 +87,7 @@ def thread_actions(gameList):
         out = __check_games(gameList)
         if out:
             __sound_alarm()
+            copy(out)
             return out
         time.sleep(10)
     return 
