@@ -80,9 +80,7 @@ def __sound_alarm():
 #Public Methods
 
 def thread_actions(gameList):
-    #To-Do: Complete Actions
-        #Close Thread
-    out = __check_games(gameList)
+    out = None
     while not out:
         out = __check_games(gameList)
         if out:
