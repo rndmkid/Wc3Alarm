@@ -39,9 +39,6 @@ def __regex_compile(gameNames):
     out += ".*$"
     return out
 
-def set_alarm():
-    #To-Do: Alarm
-    return
 
 def __list_ent_games(mode):
     #Parse https://entgaming.net/forum/games_all_fast.php
@@ -80,9 +77,7 @@ def __sound_alarm():
 #Public Methods
 
 def thread_actions(gameList):
-    #To-Do: Complete Actions
-        #Close Thread
-    out = __check_games(gameList)
+    out = None
     while not out:
         out = __check_games(gameList)
         if out:
